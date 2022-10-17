@@ -1,0 +1,150 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://bootswatch.com/5/litera/bootstrap.min.css">
+</head>
+<body>
+	<form method="post" action="./DemoServlet"></form>
+	<table align="center">
+		<tr>
+			<td>
+			<label>
+			<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+				<input type="number" class="form-control" placeholder="Cédula" aria-label="Cédula" aria-describedby="button-addon2">
+				<button class="btn btn-primary" name="cédula" value="consultar" type="submit" id="button-addon2">Consultar</button>
+			  </div>
+			</label>
+			</td>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" name="cliente" class="form-control" placeholder="Cliente" aria-label="Cliente" aria-describedby="button-addon2">
+				  </div>
+			</td>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" name="consec" class="form-control" placeholder="Consec." aria-label="Consec." aria-describedby="button-addon2">
+				  </div>
+			</td>
+		</tr>
+	</table>
+	<br></br>
+	<table align="center">
+		<tr>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" class="form-control" name="codProducto1" placeholder="Cod. Producto" aria-label="Cod. Producto" aria-describedby="button-addon2">
+					<button class="btn btn-primary" name="Consultar1" value="consultar" type="submit" id="button-addon2">Consultar</button>
+				  </div>
+			</td>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" name="nombreProducto1" class="form-control" placeholder="Nombre producto" aria-label="Nombre producto" aria-describedby="button-addon2">
+				  </div>
+			</td>
+			<td>
+			     <div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" name="cantProducto1" class="form-control" placeholder="Cantidad" aria-label="Cantidad" aria-describedby="button-addon2">
+			     </div>
+			</td>
+			<td>
+			     <div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" name="valorTotalProducto1" class="form-control" placeholder="Valor Total" aria-label="Valor Total" aria-describedby="button-addon2">
+			     </div>
+			</td>
+			
+		</tr>
+		<tr>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" class="form-control" name="codProducto1" placeholder="Cod. Producto" aria-label="Cod. Producto" aria-describedby="button-addon2">
+					<button class="btn btn-primary" name="Consultar2" value="consultar" type="submit" id="button-addon2">Consultar</button>
+				  </div>
+			</td>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" name="nombreProducto2" class="form-control" placeholder="Nombre producto" aria-label="Nombre producto" aria-describedby="button-addon2">
+				  </div>
+			</td>
+			<td>
+			     <div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" name="cantProducto2" class="form-control" placeholder="Cantidad" aria-label="Cantidad" aria-describedby="button-addon2">
+			     </div>
+
+			</td>
+			<td>
+			     <div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" name="valorTotalProducto2" class="form-control" placeholder="Valor Total" aria-label="Valor Total" aria-describedby="button-addon2">
+			     </div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" class="form-control" name="codProducto1" placeholder="Cod. Producto" aria-label="Cod. Producto" aria-describedby="button-addon2">
+					<button class="btn btn-primary" name="Consultar3" value="consultar" type="submit" id="button-addon2">Consultar</button>
+				  </div>
+			</td>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" name="nombreProducto3" class="form-control" placeholder="Nombre producto" aria-label="Nombre producto" aria-describedby="button-addon2">
+				  </div>
+			</td>
+			<td>
+			     <div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" name="cantProducto3" class="form-control" placeholder="Cantidad" aria-label="Cantidad" aria-describedby="button-addon2">
+			     </div>
+			</td>
+			<td>
+			     <div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+					<input type="text" name="valorTotalProducto3" class="form-control" placeholder="Valor Total" aria-label="Valor Total" aria-describedby="button-addon2">
+			     </div>
+			</td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+				   <input type="text" name="Iva" class="form-control" placeholder="IVA" aria-label="IVA" aria-describedby="button-addon2">
+				</div>
+		   </td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+				   <input type="text" name="Iva" class="form-control" placeholder="Total IVA" aria-label="Total IVA" aria-describedby="button-addon2">
+				</div>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;">
+				   <input type="text" name="TotalVenta" class="form-control" placeholder="Total Venta" aria-label="Total Venta" aria-describedby="button-addon2">
+				</div>
+		   </td>
+		</tr>
+	</table>
+	<br></br>
+	<table>
+		<tr>
+			<td>
+				<div style="display: flex;margin-left: 87rem;">
+					<button class="btn btn-lg btn-primary" value="Confirmar" type="submit" name="Confirmar">Confirmar</button>
+				  </div>
+			</td>
+		</tr>
+		
+	</table>
+</body>
+</html>

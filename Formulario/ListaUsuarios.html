@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<%@ page import='java.util.Date' %>
+<%@ page import='co.edu.unbosque.ciclo3demo.Usuarios' %>
+<%@ page import='java.util.ArrayList' %>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tienda Generica</title>
+<link rel="stylesheet" href="https://bootswatch.com/5/litera/bootstrap.min.css">
+</head>
+<body>
+    <h1 align="center">LISTADO DE USUARIOS</h1>
+    <h3 align="center">Hora Servidor es <%= new Date()%></h3>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Cédula</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Contraseña</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-active">
+            <td><%=usuario.getCedula_usuario()%></td>
+            <td><%=usuario.getNombre_usuario()%></td>
+            <td><%=usuario.getEmail_usuario()%></td>
+            <td><%=usuario.getUsuario()%></td>
+            <td><%=usuario.getPassword()%></td>
+            <td></td>
+          </tr>
+
+        <%
+        ArrayList<Usuarios> lista = (ArrayList<Usuarios>) request.getAttribute("lista");
+        
+        for (Usuarios usuario : lista){
+        %>
+    </table>
+	
+</body>
+</html>

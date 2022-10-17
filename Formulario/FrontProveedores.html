@@ -1,0 +1,73 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://bootswatch.com/5/litera/bootstrap.min.css">
+</head>
+<body>
+	<form method="post" action="./DemoServlet"></form>
+	<table align="center">
+		<tr>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;margin-left: 1rem;">
+					<input type="number" name="nit" class="form-control" placeholder="NIT" aria-label="nit" aria-describedby="button-addon2">
+				  </div>
+			</td>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;margin-left: 1rem;">
+					<input type="number" name="telefono" class="form-control" placeholder="Telefono" aria-label="telefono" aria-describedby="button-addon2">
+				  </div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;margin-left: 1rem;">
+					<input type="text" name="nombreProveedor" class="form-control" placeholder="Nombre Proveedor" aria-label="nombreProveedor" aria-describedby="button-addon2">
+				  </div>
+			</td>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;margin-left: 1rem;">
+					<input type="text" name="ciudad" class="form-control" placeholder="Ciudad" aria-label="ciudad" aria-describedby="button-addon2">
+				  </div>
+				</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="input-group mb-3" style="width: 400px;margin-right: 1rem;margin-left: 1rem;">
+					<input type="text" name="direccion" class="form-control" placeholder="Dirección" aria-label="direccion" aria-describedby="button-addon2">
+				  </div>
+			</td>
+
+		</tr>
+		
+	</table>
+	<br></br>
+    <table align="center">
+    	<tr>
+			<td>
+				<div style="display: flex;margin-left: 1rem;">
+					<button class="btn btn-lg btn-primary" type="submit" name="Agregar">Agregar</button>
+				</div>
+			</td>
+			<td>
+				<div style="display: flex;margin-left: 1rem;">
+					<button class="btn btn-lg btn-primary" type="submit" name="Listar">Listar Proveedores</button>
+				</div>
+			</td>
+			<td>
+				<div style="display: flex;margin-left: 1rem;">
+					<button class="btn btn-lg btn-primary" type="submit" name="Actualizar">Actualizar</button>
+				</div>
+			</td>
+			<td>
+				<div style="display: flex;margin-left: 1rem;">
+					<button class="btn btn-lg btn-primary" type="submit" name="Borrar">Borrar</button>
+				</div>
+			</td>
+        </tr>
+ 	</table>
+</body>
+</html>
